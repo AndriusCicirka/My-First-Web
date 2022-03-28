@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Rock+Salt&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(17, 19, 19);
+}
+section img{
+    flex-wrap: wrap;
+    width: 700px;
+}
+
+nav ul{
+    border-top: 2px solid rgb(200, 200, 200);
+    padding-top: .7em;
+    margin: 0;
+}
+
+:is(nav, footer) li{
+    display: inline;
+    padding: 10px;
+}
+
+:is(nav, footer) a{
+    transition-duration: 0.4s;
+    display: inline-block;
+    padding: 3px;
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+}
+
+:is(nav, footer) a:hover{
+    text-shadow: 0 0 15px #FFF, 0 0 15px #FFF, 0 0 15px #FFF;
+    padding-inline: 5px;
+}
+
+.active{
+    color: #fff;
+    font-size: 1.25em;
+    text-shadow: 0 0 15px #FFF, 0 0 15px #FFF, 0 0 15px #FFF;
+}
+
+
+h1{
+    cursor: default;
+    color: rgb(190, 190, 190);
+    font-size: 38pt;
+    margin-inline: 30px;
+}
+
+header h1{
+    font-family: Rock Salt;
+    font-size: 26pt;
+    cursor: default;
+    stroke: none;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    color: rgb(200, 200, 200);
+}
+
+header{
+    border-bottom: 1px solid rgb(172, 172, 172);
+}
+
+header, footer{
+    background-image: url("/img/cover.jpg");
+    background-size: cover;
+    background-blend-mode: hard-light;
+    background-color: rgb(0, 196, 196);
+    padding-bottom: 15px;
+}
+
+section p{
+    font-size: 15pt;
+    color:rgb(200, 200, 200);
+    margin-inline: 30px;
+    text-align: justify;
+}
+
+.pic{
+    padding: 15px;
+    transition: all ease-in-out .2s;
+}
+
+.pic:hover{
+    transition: .3s;
+    transition: all ease-in-out .2;
+    scale: 98%;
+}   
+
+.main-container, .main-containerrev{
+    display: flex;
+    flex-flow: inline wrap;
+    justify-content: space-between;
+}
+
+.main-container{
+    background: linear-gradient(to left, #000000 25%, #001314 100%);
+}
+.main-containerrev{
+    border-top: 0.5px solid rgb(172, 172, 172);
+    border-bottom: 1px solid rgb(172, 172, 172);
+    background: linear-gradient(to right, #000000 25%, #001314 100%);
+    text-align: right;
+    flex-flow: row-reverse;
+}
+
+footer{
+    border-top: 1px solid rgb(200, 200, 200);
+    padding-top: 25px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-flow: inline wrap;
+    justify-content: flex-start;
+}
+
+footer img{
+    width: 40px;
+}
+
+footer p{
+    margin-top: 10px;
+    color: #FFF;
+    font-size: 16pt;    
+    padding-left: 50px;
+}
+
+footer ul{
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+/*gallery section below*/
+
+.gallery{
+    background: radial-gradient(#001213 50%, #000000 100%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+h3{
+    color: rgb(200, 200, 200);
+    text-align: left;
+    font-size: 25pt;
+    padding-left: 20px;
+}
+
+.gallery h3{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.gallery-item{
+    padding-inline: 20px;
+}
+
+.gallery img{
+    size: 500px;
+}
+
+.gallery p{
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+/*gallery preview section below*/
+
+.preview-headl{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+:is(.preview-headl, .about-main, .booking-title) h1{
+    padding-top: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+:is(.preview-headl, .about-main, .booking-title) h3{
+    padding-left: 0;
+    font-size: 20pt;
+    margin-left: 30px;
+}
+
+.preview-headl h3{
+    margin-left: 0;
+    padding-left: 185px;
+    font-style: italic;
+}
+
+.large-padding{
+    margin-inline: 0;
+    padding-inline: 185px;
+}   
+
+.preview-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#001213 50%, #0c0c0c 100%);
+    padding-right: 50px; 
+    padding-bottom: 50px;
+}
+
+.preview-main p{
+    text-align: justify;
+    color: rgb(200, 200, 200);
+    font-size: 14pt;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+.preview-main img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+/*about me section below*/
+
+.about-title{
+    display: inline;
+}
+
+.float-left{
+    float: left;
+    padding-top: 10px;
+    padding-inline: 30px;
+    padding-bottom: 15px;
+    width: 625px;
+}
+
+.float-right{
+    float: right;
+    padding-top: 5px;
+    padding-inline: 30px;
+    padding-bottom: 15px;
+    width: 600px;
+}
+
+.about-main p{
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+
+.about-main{
+    background-image: radial-gradient(farthest-side at 10% 10%, #001113 50%, #0e0e0e 100%);
+    padding-bottom: 40px;
+}
+
+/*booking section below*/
+
+.booking-section{
+    background: radial-gradient(#001213 50%, #0c0c0c 100%);
+    padding-bottom: 75px;
+}
+
+.booking-title{
+    display: inline;
+    text-align: center;
+}
+
+.booking-title h3{
+    margin-left: 0;
+    text-align: center;
+}
+
+.form-box{
+    width: 500px;
+    background: rgba(68, 68, 68, 0.1);
+    margin: auto;
+    padding: 50px 0;
+    color: #fff;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.input-box{
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.input-box input{
+    width: 90%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+::placeholder{
+    color:rgb(223, 223, 223);
+}
+
+.booking-secion i{
+    text-indent: 20%;
+}
+
+.register-button{
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 80%;
+    display: block;
+    outline: none;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+    font-size: 16px; 
+}
+
+.form-box a{
+    width: 80%;
+    display: block;
+    outline: none;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*thank you section below*/
+
+.thank-you{
+    padding-top: 150px;
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(farthest-side at 10% 10%, #001a1d 50%, #0e0e0e 100%);
+}
+
+.thank-you h1, .thank-you h3{
+    text-align: center;
+}
