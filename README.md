@@ -1,7 +1,7 @@
 # My-First-Web
 
 My very first website 🌐,
-which I've created in a coupe of days in order to learn HTML and CSS basics.
+which I've created in a couple of evenings in order to learn HTML and CSS basics.
 
 🔜 JavaScript is not implemented and proper mobile-view support is missing as for now. 
 
